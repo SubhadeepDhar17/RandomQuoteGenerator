@@ -37,7 +37,7 @@ function App() {
         className='background'
         style={{backgroundColor: randomColor, transition}}>
         <div id="quote-box">
-          <div className="quote-content" style={{color: randomColor}}>
+          <div className="quote-content" style={{color: randomColor, transition}}>
             <h2 id="text">
             <FaQuoteLeft size='30' style={{marginRight: "10px"}} />
               {quote.quote}
@@ -53,12 +53,12 @@ function App() {
               id="tweet-quote"
               style={{
                 backgroundColor: randomColor,
-                marginRight: "10px"
+                marginRight: "10px", transition
               }}
             >
               <FaTwitter color="white" />
             </a>
-            <button id='new-quote' onClick={changeQuote} style={{backgroundColor: randomColor}}>
+            <button id='new-quote' onClick={changeQuote} style={{backgroundColor: randomColor, transition}}>
               Change Quote
             </button>
           </div>
